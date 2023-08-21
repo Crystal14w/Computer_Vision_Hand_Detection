@@ -6,10 +6,10 @@ You can find tutorial for this project on [GeeksForGeeks](https://www.geeksforge
 — Note: Please review the file I uploaded because this tutorial gives you an error on line 49.
 
 ## Introduction
-'''
+```
 pip install mediapipe  
 pip install opencv-python
-'''
+```
 
 ## How It Works
 ![](images/left_hand.png)
