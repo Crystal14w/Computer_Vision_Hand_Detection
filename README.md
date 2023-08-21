@@ -96,3 +96,12 @@ We also close any OpenCV windows using cv2.destroyAllWindows().
 
 ### Notes
 Remember to press "q" to close the application.
+
+## Authors
+
+* **hpankur02** - *Initial work* - [Right and Left Hand Detection Using Python]([https://gist.github.com/rsalaza4/a7dfb75fedca3aeb95c5cbe4bad618ce](https://www.geeksforgeeks.org/right-and-left-hand-detection-using-python/))
+* **Crystal14w** - *Edited* - [Computer Vision Python Script]([https://github.com/Crystal14w/Resume_Scanner_Python/blob/patch_1/Job_Posting_KeyTerms.py](https://github.com/Crystal14w/Computer_Vision_Hand_Detection)) 
+
+## Acknowledgments
+
+*Thanks to hpankur02 for publishing an informative article on computer vision.
