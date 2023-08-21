@@ -100,7 +100,7 @@ Remember to press "q" to close the application.
 ## Authors
 
 * **hpankur02** - *Initial work* - [GeeksForGeeks](https://www.geeksforgeeks.org/right-and-left-hand-detection-using-python/) 
-* **Crystal14w** - *Edited* - [Computer Vision Python Script](https://github.com/Crystal14w/Computer_Vision_Hand_Detection)
+* **Crystal14w** - *Edited* - [Computer Vision Python Script](https://github.com/Crystal14w/Computer_Vision_Hand_Detection/blob/main/Computer_Vision_Hand.py)
 
 ## Acknowledgments
 
