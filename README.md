@@ -7,7 +7,7 @@ You can find tutorial for this project on [GeeksForGeeks](https://www.geeksforge
 
 ## Introduction
 ``` pip install mediapipe  
-pip install opencv-python ```
+pip install opencv-python '''
 
 ## How It Works
 ![](images/left_hand.png)
