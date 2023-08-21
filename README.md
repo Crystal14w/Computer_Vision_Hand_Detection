@@ -5,7 +5,7 @@ Using computer vision to detect right hand, left hand or both hands
 You can find tutorial for this project on [GeeksForGeeks](https://www.geeksforgeeks.org/right-and-left-hand-detection-using-python/) 
 — Note: Please review the file I uploaded because this tutorial gives you an error on line 49.
 
-## Introduction
+### Introduction
 ```
 pip install mediapipe  
 pip install opencv-python
@@ -36,10 +36,63 @@ hands = mpHands.Hands(
 —— Here, we initialize the Hand Tracking model from Mediapipe.
 We set various parameters to configure the model's behavior, such as model complexity and confidence thresholds.
 
-## How It Works
+# Start capturing video from webcam
+```
+cap = cv2.VideoCapture(0)
+```
+—— We initiate capturing video from the webcam using OpenCV's VideoCapture.
+
+# Main loop
+```
+while True:
+    # Read video frame by frame
+    success, img = cap.read()
+
+    # Flip the image(frame)
+    img = cv2.flip(img, 1)
+
+    # Convert BGR image to RGB image
+    imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    # Process the RGB image
+    results = hands.process(imgRGB)
+```
+——  This is the main loop that captures and processes video frames in real-time.
+We read a frame from the webcam using cap.read(), and then flip it horizontally for intuitive display.
+The color format is converted from BGR to RGB.
+The frame is processed using the Hand Tracking model, and results are stored in the results variable.
+
+# We check if hands are detected
+```
+# Handle the presence of hands
+if results.multi_hand_landmarks:
+```
+—— Here, we check if hands are detected in the processed frame using results.multi_hand_landmarks.
+If hands are present, we proceed with handling the visual cues.
+
+# Display Video and when 'q' is entered, destroy the window
+```
+cv2.imshow('Image', img)
+
+if cv2.waitKey(1) & 0xff == ord('q'):
+    break
+
+```
+—— We display the processed frame using cv2.imshow().
+The loop waits for user input. If 'q' is pressed, the loop breaks and the application ends.
+
+# Release the webcam and close the OpenCV window
+```
+cap.release()
+cv2.destroyAllWindows()
+```
+—— After the loop, we release the webcam using cap.release() to free up resources.
+We also close any OpenCV windows using cv2.destroyAllWindows().
+    
+### How It Works
 ![](images/left_hand.png)
 ![](images/right_hand.png)
 ![](images/both_hands.png)
 
-## Notes
+### Notes
 Remember to press "q" to close the application.
