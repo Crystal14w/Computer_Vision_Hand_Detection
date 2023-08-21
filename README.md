@@ -10,6 +10,17 @@ You can find tutorial for this project on [GeeksForGeeks](https://www.geeksforge
 pip install mediapipe  
 pip install opencv-python
 ```
+# Importing Libraries
+```
+import cv2
+import mediapipe as mp
+from google.protobuf.json_format import MessageToDict
+```
+
+--These lines import the necessary libraries for the project.
+cv2 is OpenCV, a powerful library for computer vision tasks.
+mediapipe is a library that offers various pre-built solutions for media processing tasks.
+MessageToDict is a function from google.protobuf.json_format used to convert protobuf messages to dictionaries.
 
 ## How It Works
 ![](images/left_hand.png)
