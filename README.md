@@ -23,6 +23,7 @@ mediapipe is a library that offers various pre-built solutions for media process
 MessageToDict is a function from google.protobuf.json_format used to convert protobuf messages to dictionaries.
 
 # Initializing the Model
+```
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(
     static_image_mode=False,
@@ -30,6 +31,7 @@ hands = mpHands.Hands(
     min_detection_confidence=0.75,
     min_tracking_confidence=0.75,
     max_num_hands=2)
+```
 
 —— Here, we initialize the Hand Tracking model from Mediapipe.
 We set various parameters to configure the model's behavior, such as model complexity and confidence thresholds.
